@@ -14,6 +14,7 @@ html{
 :root{
     --primary-color: #f99f00;
     --black: #333333;
+    --white: #ffff;
 }
 
 /* navbar start */
