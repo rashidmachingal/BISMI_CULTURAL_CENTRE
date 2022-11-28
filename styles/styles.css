@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Manjari', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* variables */
+
+:root{
+    --primary-color: #f99f00;
+    --black: #333333;
+}
+
+/* navbar start */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 12px -4px rgb(0 0 0 / 46%);
+    background: white;
+}
+
+.toggle i{
+    font-size: 25px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.brand-logo a{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.nav-items{
+    position: fixed;
+    top: 0;
+    left: -18rem;
+    width: 18rem;
+    height: 100vh;
+    background: white;
+    box-shadow: 5px 0 6px -2px rgb(213 213 213 / 25%);
+    transition: all ease-out 0.3s;
+}
+
+.nav-items.active{
+    left: 0;
+}
+
+.nav-items .toggle{
+    position: absolute;
+    right: 43px;
+    top: 25px;
+}
+
+.nav-items .toggle i{
+    font-size: 25px;
+}
+
+.nav-items ul{
+   margin-top: 4.5rem;
+   width: 100%;
+   border-top: 0.6px solid rgba(0, 0, 0, 0.157);
+}
+
+.nav-items li{
+    padding-left: 30px;
+    margin-top: 0.5rem;
+    list-style: none;
+}
+
+.nav-items li a:hover{
+    color: #418cd2;
+}
+
+.nav-items a{
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width:700px) {
+    .navbar{
+        padding: 10px;
+        justify-content: space-between;
+    }
+}/* navbar end */
