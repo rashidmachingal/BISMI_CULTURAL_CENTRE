@@ -1,5 +1,7 @@
+
+/* landing page start */
 .landing-page-container{
-    background-image: url("../images/Screenshot\ 2022-11-28\ at\ 23-03-12\ a55c9c34-6493-4563-9239-82b83fd90882.jpeg\ \(JPEG\ Image\ 1024\ ×\ 768\ pixels\).png");
+    background-image: url("../images/bismi-cultural-centre.jpeg");
     width: 100%;
     height: 35rem;
     background-repeat: no-repeat;
@@ -30,15 +32,30 @@
 .landing-page button{
     margin-top: 1rem;
     background: var(--primary-color);
-    box-shadow: 1px 1px 2px rgb(0 0 0 / 25%);
     color: #fff;
     font-size: 20px;
     border-radius: 24px;
     padding: 4px 20px;
     cursor: pointer;
     border: none;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
 }
 
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgb(249, 159, 0);
+	}
+
+	70% {
+		box-shadow: 0 0 0 5px rgba(249, 158, 0, 0.104);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(249, 158, 0, 0.111);
+	}
+}
 
 @media (max-width:700px) {
     .landing-page-container{
@@ -47,5 +64,36 @@
     }
     .landing-page h1{
         font-size: 25px;
+    }
+}
+/* landing page end */
+
+/* content section start */
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.content-container h2{
+    font-size: 32px;
+    color: #424242;
+}
+
+.content-container p{
+    margin-top: 1rem;
+    max-width: 60%;
+}
+
+@media (max-width:700px) {
+    .content-container p{
+        max-width: 90%;
+        font-size: larger;
+        text-align: left;
+
     }
 }

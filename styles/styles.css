@@ -27,7 +27,7 @@ html{
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0 12px -4px rgb(0 0 0 / 46%);
-    background: white;
+    background: var(--white);
 }
 
 .toggle i{
@@ -89,9 +89,38 @@ html{
     text-decoration: none;
 }
 
+.youtube-icon{
+    width: 1rem;
+}
+
 @media (max-width:700px) {
     .navbar{
         padding: 10px;
         justify-content: space-between;
     }
+    .youtube-icon{
+        display: none;
+    }
 }/* navbar end */
+
+/* whatsapp chat icon start */
+
+.whatsapp_chat{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: #25D366;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.whatsapp_chat i{
+    font-size: 25px;
+}
