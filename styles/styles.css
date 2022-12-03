@@ -13,6 +13,7 @@ html{
 
 :root{
     --primary-color: #f99f00;
+    --secondary-color: #f5f5f5;
     --black: #333333;
     --white: #ffff;
 }
@@ -28,6 +29,7 @@ html{
     justify-content: space-around;
     box-shadow: 0 0 12px -4px rgb(0 0 0 / 46%);
     background: var(--white);
+    z-index: 1;
 }
 
 .toggle i{
@@ -50,7 +52,7 @@ html{
     left: -18rem;
     width: 18rem;
     height: 100vh;
-    background: white;
+    background: var(--white);
     box-shadow: 5px 0 6px -2px rgb(213 213 213 / 25%);
     transition: all ease-out 0.3s;
     z-index: 2;
@@ -83,7 +85,7 @@ html{
 }
 
 .nav-items li a:hover{
-    color: #418cd2;
+    color: var(--primary-color);
 }
 
 .nav-items a{
@@ -111,7 +113,7 @@ html{
     gap: 0.6rem;
     height: 3rem;
     border-radius: 50%;
-    color: white;
+    color: var(--white);
     cursor: pointer;
 }
 
