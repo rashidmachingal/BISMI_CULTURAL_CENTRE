@@ -53,6 +53,7 @@ html{
     background: white;
     box-shadow: 5px 0 6px -2px rgb(213 213 213 / 25%);
     transition: all ease-out 0.3s;
+    z-index: 2;
 }
 
 .nav-items.active{
@@ -94,15 +95,7 @@ html{
     width: 1rem;
 }
 
-@media (max-width:700px) {
-    .navbar{
-        padding: 10px;
-        justify-content: space-between;
-    }
-    .youtube-icon{
-        display: none;
-    }
-}/* navbar end */
+/* navbar end */
 
 /* whatsapp chat icon start */
 
