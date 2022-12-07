@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 4.5rem;
-    background-position: bottom;
+    background-position: center;
 
 }
 
@@ -76,9 +76,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--secondary-color);
     padding-bottom: 1rem;
     padding-top: 0.5rem;
+    background-image: url(https://demo.artureanec.com/html/helpo/img/blog_bg.png);
+    background-position: bottom;
+    background-size: cover;
 }
 
 .content-container h2{
@@ -186,5 +188,122 @@
     }
     .activities-box{
         width: 95%;
+    }
+}
+/* our activities section end */
+
+/* latest activities section start */
+
+.latest-activities{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    background-image: url(https://demo.artureanec.com/html/helpo/img/blog_bg.png);
+}
+
+.latest-activities-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6rem;
+}
+
+.latest-activities-left h3{
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.latest-activities-left h2{
+    font-size: 30px;
+    color: var(--heading-color);
+}
+
+.latest-activities-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-video-thumb{
+    width: 70%;
+    height: 25rem;
+    border-radius: 25px;
+    background: url(../images/bismi-cultural-centre.jpeg);
+}
+
+.latest-video-thumb div{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.296);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.latest-video-thumb div:hover{
+    background: rgba(0, 0, 0, 0.521);
+}
+
+.latest-video-thumb div i{
+    font-size: 50px;
+    color: var(--white);
+}
+
+.popup-video-container{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.popup-video{
+    width: 50rem;
+    height: 28rem;
+    background: white;
+    position: relative;
+}
+
+.popup-video i{
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+@media (max-width:900px) {
+    .latest-activities{
+        flex-direction: column;
+        height: auto;
+        background-position: top;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .latest-activities-left{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .latest-activities-right{
+        width: 100%;
+    }
+    .latest-video-thumb{
+        width: 90%;
+    }
+    .popup-video{
+        height: 20rem;
     }
 }
