@@ -7,15 +7,3 @@ for (let i = 0; i < toggleButton.length; i++) {
         navItems.classList.toggle("active")
     })
   }
-
-//popup video
-const popupVideo = document.querySelector(".popup-video-container")
-const videoThumbnail = document.querySelector(".latest-video-thumb")
-
-videoThumbnail.addEventListener("click", ()=> {
-    popupVideo.style.display = "flex"
-})
-
-popupVideo.addEventListener("click", ()=> {
-    popupVideo.style.display = "none"
-})
