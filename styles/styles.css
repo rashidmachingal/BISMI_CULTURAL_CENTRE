@@ -127,3 +127,139 @@ html{
 .whatsapp_chat i{
     font-size: 25px;
 }
+/* whatsapp chat icon end */
+
+/* footer section start */
+.footer-container{
+    width: 100%;
+    height: auto;
+    background: #161515ed;
+}
+
+.footer-one{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* footer box */
+.footer-box{
+    width: 33.333%;
+    height: 22rem;
+    padding-top: 2rem;  
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.footer-box ul{
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-box li{
+    list-style: none;
+    color: white;
+}
+
+.footer-box h3{
+    margin-right: 3rem;
+    color: white;
+}
+
+/* footer form start */
+.footer-box form{
+    margin-top: 1rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.footer-box textarea{
+    resize: vertical;
+    outline-style: none;
+    padding: 0.6rem;
+    border-radius: 3px;
+}
+
+.footer-box input{
+    outline: none;
+    border: none;
+    height: 2rem;
+    padding-left: 0.6rem;
+    border-radius: 4px;
+}
+
+.footer-box a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-box button{
+    background: #418cd2;
+    border: none;
+    height: 2rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.footer-box button:hover{
+    background: #418cd2e5;
+}/* footer form end */
+
+/* footer credit start */
+.footer-two{
+    border-top: 0.1px solid rgba(61, 61, 61, 0.801);
+    height: 6rem;
+    margin-top: 1rem;
+}
+
+.footer-social-icons{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.footer-social-icons i{
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer-credit{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    color: white;
+}
+
+.footer-credit a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.footer-credit p{
+    text-align: center;
+}
+
+@media (max-width:1009px) {
+    .footer-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-box{
+        width: 100%;
+        height: 33.333%;
+    }
+}/* footer end */

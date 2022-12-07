@@ -1,0 +1,69 @@
+/* page heading start */
+.heading-container{
+    background-image: url(../images/bismi-cultural-centre.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 4.5rem;
+}
+
+.heading-title{
+    width: 100%;
+    height: 15rem;
+    background: rgba(0, 0, 0, 0.231);
+}
+
+.heading-main{
+    width: 100%;
+    height: 15rem;
+    background: rgba(0, 0, 0, 0.332);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.heading-main p{
+    color: white;
+    font-weight: 400;
+}
+
+.bread-crumps{
+    padding-bottom: 2px;
+    border-bottom: 3.3px solid var(--primary-color);
+}
+
+.heading-main h2{
+    font-size: 32px;
+    color: white;
+    font-family: 'Manjari', sans-serif;
+}
+/* page heading end */
+
+/* page content container start */
+
+.page-content-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-content-container p{
+    width: 70%;
+    font-family: 'Manjari', sans-serif;
+}
+
+.page-content-container p span{
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+@media (max-width:700px) {
+    .page-content-container p{
+        width: 95%;
+    }
+}
