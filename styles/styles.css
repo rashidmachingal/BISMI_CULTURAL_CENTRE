@@ -263,3 +263,8 @@ html{
         height: 33.333%;
     }
 }/* footer end */
+
+/* english font */
+.english-font h2, p{
+    font-family: 'Poppins', sans-serif!important;
+}
