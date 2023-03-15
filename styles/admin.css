@@ -1,0 +1,35 @@
+.image-upload-container{
+    margin-top: 4.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+.image-upload-container form{
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.image-upload-container form button{
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.image-upload-container form img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width:500px) {
+    .image-upload-container form{
+        width: 95%;
+    }
+}

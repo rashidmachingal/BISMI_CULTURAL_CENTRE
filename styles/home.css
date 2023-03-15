@@ -298,13 +298,13 @@
 
 .latest-activities-image{
     width: 20rem;
+    cursor: pointer;
 }
 
 .latest-activities-image img{
     width: 100%;
     border-radius: 15px;
     object-fit: cover;
-
 }
 
 .latest-activities button{

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bismi Cultural Centre - History of Bismi Cultural Centre</title>
+    <meta name="title" content="Bismi Cultural Centre - History of Bismi Cultural Centre" />
+    <meta name="description" content="Here is Provide History of Bismi Cultural Centre"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+    <link rel="stylesheet" href="styles/admin.css" />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"  integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- custom javascript -->
+    <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/imageUpload.js" type="module" defer></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav>
+      <div class="navbar">
+        <div class="toggle"><i class="fa-solid fa-bars fa-lg"></i></div>
+        <div class="brand-logo">
+          <a href="/">BISMI CULTURAL CENTRE</a>
+        </div>
+        <ul>
+          <li class="nav-item"><a href="#activities">Activities</a></li>
+          <li class="nav-item"><a href="/latest-updates.html">Updates</a></li>
+          <li class="nav-item"><a href="/donation.html">Donate</a></li>
+          <li class="nav-item"><a href="/about.html">About</a></li>
+          <li class="nav-item"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Image Upload Start -->
+
+    <section class="image-upload-container">
+        <div id="message"></div>
+      <form id="imageForm" >
+        <input required type="file" id="image-upload" accept="image/*" />
+        <!-- <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/330202390_593801852759210_5582816846898336674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ghNOIAnndY0AX87AAZN&_nc_ht=scontent.fcok6-1.fna&oh=00_AfBp17HMZpePIzlyyaIzbXZeuh9oP2YcWyFuMUmTbuviGA&oe=6417C954" alt=""> -->
+        <button class="upload-button" type="submit" >UPLOAD</button>
+      </form>
+    </section>
+
+    <!-- Footer Start -->
+    <footer id="contact" class="footer-container">
+      <div class="footer-one">
+        <div class="footer-box box-2">
+          <h3 style="margin-right: 5rem">Contact Details</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> Calicut Airport Road,
+              Karipur, Kerala 673647
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +91 9846681019</li>
+            <li><i class="fa-solid fa-envelope"></i> bccbismi@gmail.com</li>
+            <li><i class="fa-brands fa-whatsapp"></i> +91 9846681019</li>
+          </ul>
+        </div>
+        <div class="footer-box box-2">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/disclaimer.html">Disclaimer</a></li>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-box box-2">
+          <h3>Contact</h3>
+          <form action="https://formspree.io/f/xgeqgzkv" method="POST">
+            <input
+              required
+              type="text"
+              placeholder="Full Name"
+              name="fullname"
+            />
+            <input required type="email" placeholder="Email" name="email" />
+            <textarea
+              required
+              rows="6"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <button>SEND</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-two">
+        <div class="footer-social-icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="footer-credit">
+          <p>
+            © Copyright 2022 | Designed by
+            <a
+              target="_blank"
+              href="https://www.instagram.com/rashid.machingal/"
+              >Rashid Machingal</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Whatsapp Icon Start -->
+    <div
+      onclick="location.href='https://api.whatsapp.com/send?phone=919846681019'"
+      class="whatsapp_chat"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+    <!-- Whatsapp Icon End -->
+  </body>
+</html>
