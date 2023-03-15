@@ -48,6 +48,19 @@ app.get('/images', (req, res) => {
     });
   });
 
+  // route to delete image
+  app.post("/delete/:id",(req, res) => {
+    const filePath = `./uploads/${req.params.id}`;
+
+   fs.unlink(filePath, (err) => {
+     if (err) {
+      console.error(err);
+      return;
+    }
+    res.json({messgae:"image deleted successfully!"})
+});
+  })
+
 
 // app connection
 app.listen(process.env.PORT || 5000, () => {
