@@ -10,7 +10,7 @@ form.addEventListener('submit', async (e) => {
 	formData.append('image', file);
 
 	try {
-		const response = await fetch('http://localhost:5000/upload', {
+		const response = await fetch('https://wild-puce-turtle-sock.cyclic.app/upload', {
 			method: 'POST',
 			body: formData
 		});

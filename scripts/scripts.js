@@ -14,20 +14,20 @@ for (let i = 0; i < navItems.length; i++) {
   }
 
 // get images
-fetch("http://localhost:5000/images").then((res) => res.json()).then(data => {
+fetch("https://wild-puce-turtle-sock.cyclic.app/images").then((res) => res.json()).then(data => {
     const imageList = data.images;
     const imageContainer = document.querySelector('.latest-activities-images');
     
     // Iterate through the list of images and create HTML elements to display them
     for (let i = 0; i < imageList.length; i++) {
         const imageElement = document.createElement('img');
-        imageElement.src = `http://localhost:5000/uploads/${imageList[i]}`; // Assuming images are stored in the uploads directory
+        imageElement.src = `https://wild-puce-turtle-sock.cyclic.app/${imageList[i]}`; // Assuming images are stored in the uploads directory
         imageElement.alt = `Image ${i+1}`;
         imageElement.className = 'latest-activities-image';
         
         // Add a click event listener to each image element
         imageElement.addEventListener('click', function() {
-            window.location.href = `http://localhost:5000/uploads/${imageList[i]}`;
+            window.location.href = `https://wild-puce-turtle-sock.cyclic.app/${imageList[i]}`;
         });
         
         const imageWrapper = document.createElement('div');
