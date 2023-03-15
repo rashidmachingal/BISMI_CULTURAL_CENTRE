@@ -1,72 +1,104 @@
 
 /* landing page start */
 .landing-page-container{
-    background-image: url("../images/bismi-cultural-centre.jpeg");
     width: 100%;
     height: 35rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 4.5rem;
+    margin-top: 4.9rem;
+    background: url(../images/bismi-cultural-centre.jpeg);
     background-position: center;
-
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .landing-page{
     width: 100%;
     height: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.32958693731398814) 0%, rgba(0,0,0,0.27636564879858194) 100%);
+    display: flex;
+    background: #add8e621;
+    box-shadow: 0 0 22px -8px var(--primary-text);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.landing-page-left{
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 15px;
 }
 
-.landing-page h1{
+.landing-page-left h1{
     color: var(--white);
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.392);
-    font-size: 35px;
+    text-shadow: 1px 1px 0px var(--primary-text);
+    font-size: 39px;
     font-family: 'Manjari', sans-serif;
     margin-left: 5rem;
 }
 
-.landing-page button{
-    margin-top: 1rem;
-    background: var(--primary-color);
-    color: #fff;
-    font-size: 20px;
-    border-radius: 24px;
-    padding: 4px 20px;
-    cursor: pointer;
-    border: none;
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: pulse 2s infinite;
-    font-family: 'Manjari', sans-serif;
+.landing-page-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgb(249, 159, 0);
-	}
+.landing-page-right h2{
+    color: var(--white);
+    text-shadow: 1px 1px 0px var(--primary-text);
+}
 
-	70% {
-		box-shadow: 0 0 0 5px rgba(249, 158, 0, 0.104);
-	}
+.landing-page-right div{
+    width: 70%;
+    height: 70%;
+    background: url(../images/bismi-cultural-centre.jpeg);
+    border-radius: 50px;;
+    background-position-y: center;
+    background-position-x: -150px;
+    box-shadow: 33px 34px 0px -5px #5fc5b81c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 25px;
+}
 
-	100% {
-		box-shadow: 0 0 0 0 rgba(249, 158, 0, 0.111);
-	}
+.social-media-icons{
+    display: none;
 }
 
 @media (max-width:700px) {
     .landing-page-container{
         height: 20rem;
-        background-position: bottom;
+        flex-direction: column;
     }
-    .landing-page h1{
+    .landing-page{
+        flex-direction: column;
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.32958693731398814) 0%, rgba(0,0,0,0.27636564879858194) 100%);
+    }
+    .landing-page-left{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .landing-page-left h1{
         font-size: 25px;
     }
+    .landing-page-right{
+        display: none;
+    }
+    .social-media-icons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    
 }
 /* landing page end */
 
@@ -78,9 +110,6 @@
     align-items: center;
     padding-bottom: 1rem;
     padding-top: 0.5rem;
-    background-image: url(https://demo.artureanec.com/html/helpo/img/blog_bg.png);
-    background-position: bottom;
-    background-size: cover;
 }
 
 .content-container h2{
@@ -128,7 +157,7 @@
     gap: 1rem;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 .activities-box{
@@ -140,7 +169,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: relative; 
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
 }
 
 .activities-box h3{
@@ -163,23 +198,17 @@
     color: var(--white);
     border-radius: 5px;
     cursor: pointer;
-}
-
-.activities-box button:hover{
     background: var(--primary-color);
 }
+
 
 .activities-box img{
     border-radius: 50%;
     margin-top: 0.5rem;
     width: 200px;
     height: 200px;
-    box-shadow: 0px 0px 1px 5px #f99e003a;
+    box-shadow: 0px 0px 1px 5px var(--primary-text);
     transition: box-shadow ease-in-out 0.5s;
-}
-
-.activities-box:hover img {
-    box-shadow: 0px 81px 1px 25px #f99e003a;
 }
 
 @media (max-width:500px) {
@@ -192,90 +221,6 @@
 }
 /* our activities section end */
 
-/* latest activities section start */
-
-.latest-activities{
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    background-image: url(https://demo.artureanec.com/html/helpo/img/blog_bg.png);
-}
-
-.latest-activities-left{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 6rem;
-}
-
-.latest-activities-left h3{
-    font-weight: 400;
-    color: var(--primary-color);
-}
-
-.latest-activities-left h2{
-    font-size: 30px;
-    color: var(--heading-color);
-}
-
-.latest-activities-right{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.latest-video-thumb{
-    width: 70%;
-    height: 25rem;
-    border-radius: 25px;
-    background: url(../images/bismi-cultural-centre.jpeg);
-}
-
-.latest-video-thumb div{
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    background: rgba(0, 0, 0, 0.296);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.latest-video-thumb div:hover{
-    background: rgba(0, 0, 0, 0.521);
-}
-
-.latest-video-thumb div i{
-    font-size: 50px;
-    color: var(--white);
-}
-
-@media (max-width:900px) {
-    .latest-activities{
-        flex-direction: column;
-        height: auto;
-        background-position: top;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-    .latest-activities-left{
-        width: 100%;
-        padding-left: 10px;
-    }
-    .latest-activities-right{
-        width: 100%;
-    }
-    .latest-video-thumb{
-        width: 90%;
-    }
-}
-/* latest activities section start */
-
 /* donate now section start */
 
 .donate-now-container{
@@ -284,6 +229,7 @@
     flex-direction: column;
     align-items: center;
     padding: 75px;
+    padding-bottom: 30px;
     padding-top: 0;
 }
 
@@ -300,8 +246,8 @@
 
 .donate-now-container button{
     margin-top: 1rem;
-    width: 12rem;
-    height: 3rem;
+    width: 13rem;
+    height: 2.5rem;
     border: none;
     background: var(--primary-color);
     color: var(--white);
@@ -310,37 +256,7 @@
     position: relative;
 }
 
-.donate-now-container button:hover::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.2px solid rgba(0, 0, 0, 0.406);
-}
 
-.donate-now-container button:hover span{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    color: var(--primary-color);
-}
-
-.donate-now-container button::before{
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background: white;
-    width: 0%;
-    height: 0%;
-    border-radius: 25px;
-    transition: 0.5s ease-in-out;
-}
 
 @media (max-width:700px) {
     .donate-now-container{
@@ -355,3 +271,49 @@
     }
 }
 /* donate now section start */
+/* latest activities start */
+.latest-activities{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.latest-activities h2{
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 32px;
+}
+
+.latest-activities-images{
+    margin-top: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.latest-activities-image{
+    width: 20rem;
+}
+
+.latest-activities-image img{
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+
+.latest-activities button{
+    margin-top: 15px;
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+}

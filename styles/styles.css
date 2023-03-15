@@ -9,6 +9,16 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-image: linear-gradient(
+  155deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(163deg 33% 96%) -2%,
+  hsl(163deg 35% 92%) 3%,
+  hsl(163deg 34% 88%) 75%
+);
+}
+
 /* variables */
 
 :root{
@@ -29,9 +39,17 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 0 12px -4px #00000075;
-    background: var(--white);
     z-index: 1;
+    background-image: linear-gradient(
+        155deg,
+        hsl(0deg 0% 100%) 0%,
+        hsl(163deg 33% 96%) -2%,
+        hsl(163deg 35% 92%) 3%,
+        hsl(163deg 34% 88%) 75%
+      );
+    box-shadow: 0 4px 30px rgba(226, 220, 220, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
 .toggle{
@@ -40,7 +58,7 @@ html{
 
 .toggle i{
     font-size: 25px;
-    color: var(--primary-color);
+    color: var(--primary-text);
     cursor: pointer;
 }
 
@@ -69,6 +87,27 @@ html{
 
 
 @media (max-width:700px) {
+    .toggle{
+        display: initial;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar.active ul{
+        position: fixed;
+        top: 4.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-top: 1px solid var(--primary-text);
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        background-image: linear-gradient(155deg,hsl(0deg 0% 100%) 0%,hsl(163deg 33% 96%) -2%,hsl(163deg 35% 92%) 3%,hsl(163deg 34% 88%) 75%);
+        box-shadow: 0 4px 30px rgba(226, 220, 220, 0.1);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+    }
     .brand-logo a{
         font-size: 23px;
     }
@@ -101,9 +140,10 @@ html{
 
 /* footer section start */
 .footer-container{
+    border-top: 1px solid var(--primary-text);
     width: 100%;
     height: auto;
-    background: #161515ed;
+
 }
 
 .footer-one{
@@ -133,12 +173,12 @@ html{
 
 .footer-box li{
     list-style: none;
-    color: white;
+    color: var(--heading-color);
 }
 
 .footer-box h3{
     margin-right: 3rem;
-    color: white;
+    color: var(--heading-color);
 }
 
 /* footer form start */
@@ -155,6 +195,7 @@ html{
     outline-style: none;
     padding: 0.6rem;
     border-radius: 3px;
+    border: none;
 }
 
 .footer-box input{
@@ -167,25 +208,21 @@ html{
 
 .footer-box a{
     text-decoration: none;
-    color: white;
+    color: var(--heading-color);
 }
 
 .footer-box button{
-    background: #418cd2;
+    background: var(--primary-color);
     border: none;
     height: 2rem;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     border-radius: 4px;
 }
-
-.footer-box button:hover{
-    background: #418cd2e5;
-}/* footer form end */
+/* footer form end */
 
 /* footer credit start */
 .footer-two{
-    border-top: 0.1px solid rgba(61, 61, 61, 0.801);
     height: 6rem;
     margin-top: 1rem;
 }
@@ -199,7 +236,7 @@ html{
 }
 
 .footer-social-icons i{
-    color: white;
+    color: var(--heading-color);
     cursor: pointer;
     font-size: 18px;
 }
@@ -210,12 +247,12 @@ html{
     justify-content: center;
     align-items: center;
     gap: 0.6rem;
-    color: white;
+    color: var(--heading-color);
 }
 
 .footer-credit a{
     text-decoration: none;
-    color: white;
+    color: var(--heading-color);
     font-weight: 700;
 }
 
