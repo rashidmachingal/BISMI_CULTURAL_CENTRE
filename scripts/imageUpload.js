@@ -1,6 +1,17 @@
 const form = document.getElementById('imageForm');
 const message = document.getElementById('message');
 
+form.addEventListener("change", (e) => {
+	const file = e.target.files[0];
+	const reader = new FileReader();
+	reader.onload = function() {
+	  const img = document.createElement("img");
+	  img.src = reader.result;
+	  form.appendChild(img);
+	}
+	reader.readAsDataURL(file);
+})
+
 form.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	const fileInput = document.querySelector('input[type="file"]');
