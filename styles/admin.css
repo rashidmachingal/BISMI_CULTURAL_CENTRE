@@ -28,6 +28,14 @@
     border-radius: 10px;
 }
 
+#passwordInput{
+    border: 2px solid var(--primary-text);
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: 5px;
+    outline: none;
+}
+
 @media (max-width:500px) {
     .image-upload-container form{
         width: 95%;

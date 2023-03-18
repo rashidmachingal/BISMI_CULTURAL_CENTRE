@@ -11,8 +11,13 @@
         <link rel="stylesheet" href="styles/home.css">
         <!-- font awesome cdn -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- firebase script -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js" defer ></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js" defer ></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js" defer ></script>
         <!-- custom javascript -->
-        <script src="./scripts/scripts.js" defer ></script>
+        <script src="./scripts/imageUpload.js" defer></script>
+        <script src="./scripts/scripts.js" defer></script>
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,25 +54,8 @@
 
               <!-- Latest Upadtes Section Start -->
               <section class="latest-activities" >
-                <div class="latest-activities-images" >
-                  <div class="latest-activities-image" >
-                      <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/330202390_593801852759210_5582816846898336674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=otJwfhp6C90AX_Knkxr&_nc_ht=scontent.fcok6-1.fna&oh=00_AfBv6sEwSY7l34XQA0henixHEiFPDC5ELviGT94ijLmXJg&oe=640FE054" alt="">
-                  </div>
-                  <div class="latest-activities-image" >
-                      <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/329414529_870663000879970_8418545462718232173_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=R8PPF8C_FqEAX98uEWH&_nc_ht=scontent.fcok6-1.fna&oh=00_AfD7SfqhOwgTVbCUOo_aQC7xR0bfoHGL_kBOL5ObIaSd1g&oe=640F3838" alt="">
-                  </div>
-                  <div class="latest-activities-image" >
-                      <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/330202390_593801852759210_5582816846898336674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=otJwfhp6C90AX_Knkxr&_nc_ht=scontent.fcok6-1.fna&oh=00_AfBv6sEwSY7l34XQA0henixHEiFPDC5ELviGT94ijLmXJg&oe=640FE054" alt="">
-                  </div>
-                  <div class="latest-activities-image" >
-                      <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/330202390_593801852759210_5582816846898336674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=otJwfhp6C90AX_Knkxr&_nc_ht=scontent.fcok6-1.fna&oh=00_AfBv6sEwSY7l34XQA0henixHEiFPDC5ELviGT94ijLmXJg&oe=640FE054" alt="">
-                  </div>
-                  <div class="latest-activities-image" >
-                      <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/330202390_593801852759210_5582816846898336674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=otJwfhp6C90AX_Knkxr&_nc_ht=scontent.fcok6-1.fna&oh=00_AfBv6sEwSY7l34XQA0henixHEiFPDC5ELviGT94ijLmXJg&oe=640FE054" alt="">
-                  </div>
-                  <div class="latest-activities-image" >
-                      <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/330202390_593801852759210_5582816846898336674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=otJwfhp6C90AX_Knkxr&_nc_ht=scontent.fcok6-1.fna&oh=00_AfBv6sEwSY7l34XQA0henixHEiFPDC5ELviGT94ijLmXJg&oe=640FE054" alt="">
-                  </div>
+                <div class="latest-updates" >
+                  
                 </div>
                 <button>LOAD MORE</button>
               </section>

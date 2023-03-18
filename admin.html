@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="styles/admin.css" />
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"  integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- firebase script -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js" defer ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js" defer ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js" defer ></script>
     <!-- custom javascript -->
+    <script src="./scripts/imageUpload.js" defer></script>
     <script src="./scripts/scripts.js" defer></script>
-    <script src="./scripts/imageUpload.js" type="module" defer></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,8 +50,9 @@
     <section class="image-upload-container">
         <div id="message"></div>
       <form id="imageForm" >
-        <input required type="file" id="image-upload" accept="image/*" />
-        <button class="upload-button" type="submit" >UPLOAD</button>
+        <input required type="file" id="fileInput" accept="image/*" />
+        <input required type="text" id="passwordInput" placeholder="Password" />
+        <button id="uploadButton" class="upload-button" type="submit" >UPLOAD</button>
       </form>
     </section>
 
